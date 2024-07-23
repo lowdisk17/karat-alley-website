@@ -17,30 +17,19 @@ export default function Navbar(props) {
       href: "/"
     },
     {
-      label: "About",
+      label: "About Us",
       href: "/about"
     },
-    {
-      label: "Contact",
-      href: "/contact"
-    }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
+      label: "Products",
       href: "/archive"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
+      label: "Contact Us",
+      href: "/contact"
     }
   ];
 
@@ -86,7 +75,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Karat Alley
                       </span>
                     )}
                   </Link>
@@ -100,7 +89,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Karat Alley
                       </span>
                     )}
                   </Link>

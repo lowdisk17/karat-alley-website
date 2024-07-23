@@ -92,7 +92,7 @@ export default function NavbarAlt(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Karat Alley
                       </span>
                     )}
                   </Link>
@@ -106,7 +106,7 @@ export default function NavbarAlt(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Karat Alley
                       </span>
                     )}
                   </Link>
