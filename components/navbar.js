@@ -9,6 +9,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
+import KaratAlleyLogo from "../public/img/KaratAlley.png";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -65,31 +66,39 @@ export default function Navbar(props) {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
+                  <Link href="/" className="w-30 dark:hidden">
                     {props.logo ? (
                       <Image
                         {...urlForImage(props.logo)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 640px) 150vw, 300px"
                       />
                     ) : (
                       <span className="block text-center">
-                        Karat Alley
+                        <Image src={KaratAlleyLogo} 
+                        unoptimized={true}
+                        width="200"
+                        height="100"
+                        />
                       </span>
                     )}
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
+                  <Link href="/" className="hidden w-30 dark:block">
                     {props.logoalt ? (
                       <Image
                         {...urlForImage(props.logoalt)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 640px) 150vw, 300px"
                       />
                     ) : (
                       <span className="block text-center">
-                        Karat Alley
+                        <Image src={KaratAlleyLogo} 
+                        unoptimized={true}
+                        width="200"
+                        height="100"
+                        />
                       </span>
                     )}
                   </Link>

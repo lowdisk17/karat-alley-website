@@ -10,6 +10,7 @@ import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
 import SearchInput from "./ui/search";
+import KaratAlleyLogo from "../public/img/KaratAlley.png";
 
 export default function NavbarAlt(props) {
   const menu = [
@@ -44,11 +45,15 @@ export default function NavbarAlt(props) {
                         src={urlForImage(props.logo)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 640px) 150vw, 300px"
                       />
                     ) : (
                       <span className="block text-center">
-                        Karat Alley
+                        <Image src={KaratAlleyLogo} 
+                        unoptimized={true}
+                        width="500"
+                        height="250"
+                        />
                       </span>
                     )}
                   </Link>
@@ -58,11 +63,15 @@ export default function NavbarAlt(props) {
                         src={urlForImage(props.logoalt)}
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        sizes="(max-width: 640px) 150vw, 300px"
                       />
                     ) : (
                       <span className="block text-center">
-                        Karat Alley
+                        <Image src={KaratAlleyLogo} 
+                        unoptimized={true}
+                        width="500"
+                        height="250"
+                        />
                       </span>
                     )}
                   </Link>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://karatalley.com
+
+# Sitemaps
+Sitemap: https://karatalley.com/sitemap.xml

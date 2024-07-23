@@ -14,7 +14,7 @@ export default function Footer(props) {
       <div className="mt-1 flex justify-center gap-1 text-center text-sm text-gray-500 dark:text-gray-600">
         <span>
           {" "}
-          Made by{" "}
+          {" "}
           {}
           <a
             href="https://karatalley.com"
